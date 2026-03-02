@@ -60,6 +60,7 @@ main {
 
 section#ficha {
     background-color: var(--fundo-card);
+    margin: 20px;
     padding: 20px;
     border-radius: 8px;
 }
@@ -104,12 +105,19 @@ div#social a:hover {
 article#skills {
     background-color: var(--fundo-card);
     margin-top: 20px;
+    margin: 20px;
     border-radius: 8px;
     padding: 20px;
 }
 
 article#skills h2 {
     color: var(--destaque);
+    padding-bottom: 20px;
+}
+
+#skill-container .info {
+    display: flex;
+    justify-content: space-between;
 }
 
 #skill-container .nome {
@@ -127,11 +135,79 @@ article#skills h2 {
     height: 8px;
     background-color: var(--fundo-principal);
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 #skill-container .progresso {
     height: 100%;
     background-color: var(--destaque-inverso);
     border-radius: 4px;
+}
+
+article#formacao {
+    background-color: var(--fundo-card);
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+article#formacao h2 {
+    color: var(--destaque);
+    margin-bottom: 20px;
+}
+
+#formacao-container .curso {
+    background-color: var(--fundo-principal);
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso);
+    padding-left: 15px;
+    transition: border-width 0.5s, border-color 0.5s;
+}
+
+#formacao-container .curso:hover {
+    border-left-width: 15px;
+    border-color: var(--destaque);
+    cursor: pointer;
+}
+
+#formacao-container .periodo {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+#formacao-container .instituicao {
+    color: var(--destaque-inverso);
+    font-size: 1.2em;
+}
+
+article#projetos {
+    background-color: var(--fundo-card);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#projetos h2 {
+    color: var(--destaque);
+}
+
+footer {
+    background-color: var(--destaque);
+    color: var(--texto-inverso);
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--texto-inverso);
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--destaque-inverso);
 }
 
